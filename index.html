@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>Drag and Drop Puzzle Game</title>
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+	<link href="css/ddmain.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<header id="headLine">
+		<h1 class="hidden">Drag and Drop Puzzle Game</h1>
+		<h2>Fun With JavaScript!</h2>
+		<p>Drag and Drop the Puzzle Pieces!</p>
+	</header>
+
+	<section id="game-boards">
+		<h2 class="hidden">The Game Board</h2>
+
+		<div class="puzzle-pieces">
+			<img id="topLeft" src="images/dd/topLeft0.jpg" alt="top left" class="puzzle-image">
+			<img id="topRight" src="images/dd/topRight0.jpg" alt="top right" class="puzzle-image">
+			<img id="bottomLeft" src="images/dd/bottomLeft0.jpg" alt="bottom left" class="puzzle-image">
+			<img id="bottomRight" src="images/dd/bottomRight0.jpg" alt="bottom right" class="puzzle-image">
+		</div>
+
+		<div class="puzzle-board">
+			<div class="drop-zone" data-drop="topLeft"></div>
+			<div class="drop-zone" data-drop="topRight"></div>
+			<div class="drop-zone" data-drop="bottomLeft"></div>
+			<div class="drop-zone" data-drop="bottomRight"></div>
+		</div>
+	</section>
+
+	<footer>
+		<p>click thumb to change pieces!</p>
+		<nav id="buttonHolder">
+			<h3 class="hidden">Select Image</h3>
+			<img data-imageref="0" src="images/dd/buttonZero.jpg" alt="thumbnail">
+			<img data-imageref="1" src="images/dd/buttonOne.jpg" alt="thumbnail">
+			<img data-imageref="2" src="images/dd/buttonTwo.jpg" alt="thumbnail">
+			<img data-imageref="3" src="images/dd/buttonThree.jpg" alt="thumbnail">
+		</nav>
+	</footer>
+
+	<script src="js/ddapp.js"></script>
+</body>
+</html>
